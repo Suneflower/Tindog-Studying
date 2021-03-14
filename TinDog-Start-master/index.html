@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TinDog</title>
 
     <link
@@ -28,36 +30,12 @@
   </head>
 
   <body>
-    <section id="challenge">
-      <div class="container-fluid text-center">
-        <h2> Challenge 3: Rock, Paper, Scissors</h2>
-        <button class="btn btn-danger" onclick="reset()"> Reset</button>
-        <div>
-          <img id="rock" src="gameImg/rock.png" alt="" onclick="playGame(this)">
-          <img id="paper" src="gameImg/paper.png" alt="" onclick="playGame(this)">
-          <img id="scissors" src="gameImg/scissors.png" alt="" onclick="playGame(this)">
-        </div> 
-      </div>
-    </section>
-
-    
-    <!-- <section id="challenge">
-      <div class="container-fluid text-center">
-        <h2> Challenge 3: Rock, Paper, Scissors</h2>
-        <button class="btn btn-danger" onclick="reset()"> Reset</button>
-        <div>
-          <img  id="rock" src="gameImg/rock.png" alt="">
-          <img id="paper" src="gameImg/paper.png" alt="">
-          <img  id="scissors" src="gameImg/scissors.png" alt="">
-        </div> 
-      </div>
-    </section> -->
-
+   
         
     <section id="title">
-      <div class="container-fluid text-center">
+      <div class="container text-center">
         <!-- Nav Bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
           <a href="" class="navbar-brand">TinDog</a>
           <button
             class="navbar-toggler"
@@ -72,17 +50,17 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a href="" class="nav-link">Contact </a></li>
-              <li class="nav-item"><a href="" class="nav-link">Pricing </a></li>
+              <li class="nav-item"><a href="#footer" class="nav-link">Contact </a></li>
+              <li class="nav-item"><a href="#pricing" class="nav-link">Pricing </a></li>
               <li class="nav-item">
-                <a href="" class="nav-link">Download </a>
+                <a href="#cta" class="nav-link">Download </a>
               </li>
             </ul>
           </div>
         </nav>
         <!-- Title -->
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 align-left">
             <h1>Meet new and interesting dogs nearby.</h1>
             <button type="button" class="btn btn-outline-light download-btn">
               <i class="fab fa-apple"></i> Download
@@ -105,7 +83,7 @@
     <!-- Features -->
 
     <section id="features">
-      <div class="row container-fluid">
+      <div class="row container">
         <div class="col-lg-4 text-center">
           <i class="fas fa-check-circle fa-3x overlay"></i>
           <h3>Easy to use.</h3>
@@ -251,16 +229,23 @@
     <!-- Call to Action -->
 
     <section id="cta">
-      <h3>Find the True Love of Your Dog's Life Today.</h3>
-      <button type="button">Download</button>
-      <button type="button">Download</button>
+      <h1>Find the True Love of Your Dog's Life Today.</h1>
+      <button type="button" class="btn btn-outline-light btn-lg download-btn">
+        <i class="fab fa-apple"></i> Download
+      </button>
+      <button type="button" class="btn btn-lg btn-dark download-btn">
+        <i class="fab fa-google-play"></i> Download
+      </button>
     </section>
 
     <!-- Footer -->
 
     <footer id="footer">
+      <i class="fab fa-facebook fa-3x"></i>
+      <i class="fab fa-twitter-square fa-3x"></i>
+      <i class="fab fa-instagram fa-3x" ></i>
+      <i class="fab fa-discord fa-3x"></i>
       <p>© Copyright 2018 TinDog</p>
     </footer>
-    <script src="serverhelp.js"></script>
   </body>
 </html>

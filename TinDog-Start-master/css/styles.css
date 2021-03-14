@@ -3,23 +3,7 @@
   background-color: #ff4c68;
 
 }
-.container-fluid {
-  padding: 3% 10%;
-}
-#challenge img{
-  width: 200px;
-  height: 200px;
-  padding: 30px;
-  justify-content: space-around;
-  }
-.container-fluid h2{
-  color:palevioletred;
-}
-.display-winner{
-   display: inline-block;
-   font-size: 40px;
-   color: red;
-}
+
 
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Ubuntu', sans-serif; 
@@ -39,7 +23,6 @@ h1 {
 .transform {
   transform: rotate(25deg);
   width: 60%;
-
 }
 .navbar {
   padding: 0 0 40px;
@@ -49,7 +32,21 @@ h1 {
   font-size: 2rem;
   font-weight: 200;
 }
-
+.align-left{
+  text-align: left;
+}
+@media (max-width: 600px){
+  .align-left{
+    text-align: center;
+  }
+  .transform {
+    margin: 40px;
+    transform: rotate(0);
+    position: static;
+    width: 40%;
+    height: 80%;
+  }
+}
 .download-btn {
   margin: 20px 20px 0 0;
 }
@@ -119,4 +116,28 @@ h2 {
 }
 .card-style{
   padding: 5% 2%;
+}
+#cta{
+  background-color: #ff4c68;
+  padding: 80px;
+  text-align: center;
+}
+#cta h1{
+  text-align: center;
+  margin: 40px;
+}
+#cta .download-btn{
+  margin: 40px;
+}
+#footer{
+  margin: 40px;
+  font-size: 10px;
+  text-align: center;
+}
+#footer p{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#footer i{
+  margin: 10px;
 }
